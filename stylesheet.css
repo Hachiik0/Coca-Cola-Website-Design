@@ -1,0 +1,231 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'poppins', sans-serif;
+
+
+}
+section {
+   position: relative;
+   width: 100%;
+   max-height: 100vh;
+   padding: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #000000;
+   transition: o.5;
+}
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+}
+header.logo {
+   position: relative;
+   max-width: 80px;
+
+}
+header ul {
+   position: relative;
+   display: flex;
+}
+header ul li{
+   list-style: none;
+}
+header ul li a
+{
+   display: inline-block;
+   font-size: 25px;
+   color: #fffFFF;
+   text-decoration: none;
+   font-weight: 500;
+   margin-left: 35px;
+}
+header ul li a:hover
+{
+   color: #ff0000;
+}
+.home-content {
+   max-width: 600px;
+
+}
+.home-content h3{
+   font-size: 32;
+   font-weight: 700;
+   color: #ffffff;
+   animation: slideBottm 1s ease forwards;
+   animation-delay: .7s;
+   
+}
+.home-content h3:nth-of-type(2){
+   margin-bottom: 30px;
+   animation: slidetop 1s ease forwards;
+   animation-delay: .7s;
+}
+.home-content h1 span {
+   color: #ff0000;
+
+}
+.home-content h1 {
+   font-size: 56px;
+   font-weight: 700;
+   color: #fff;
+   margin: -3px 0;
+   animation: slideRight 1s ease forwards;
+   animation-delay: 1s;
+   
+}
+.home-content p{
+   font-size: 20px;
+   color: #fff;
+}
+.home-sci a{
+   display: inline-flex;
+   justify-content:center;
+   align-items:center;
+   width: 40px;
+   height: 40px;
+   background: transparent;
+   border: 2px solid #ff0000;
+   border-radius: 50%;
+   font-size: 20px;
+   color: #ff0000;
+   text-decoration: none;
+   transition: .5s ease;
+
+
+   margin: 30px 15px 30px 0;
+
+}
+
+.home-sci A:hover {
+  background: #ff0000;
+  color: #000000;
+  box-shadow: 0 0 20px #ff0000;
+}
+.btn-box{
+  display:inline-block;
+  padding: 12px 28px;
+  background: #f00;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  animation: slidtop 1s ease forwards;
+  animation-delay: 2s;
+  opacity: 1;
+  box-shadow: 0 0 5px #2500f8,
+     0 0 25px #ff0000
+}
+.btn-box:hover {
+  box-shadow: 0 0 5px #6200ff,
+  0 0 25px #3700ff, 0 0 50px #ff0000,
+  0 0 100px #ff0000, 0 0 200px #5500ff;
+}
+.imgBox
+{
+   width: 600px;
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 50px;
+   margin-top: 100px;
+   opacity: 99%;
+}
+.imgBox img
+{
+   max-width: 240px;
+}
+.thumb {
+   position: absolute;
+   left: 50%;
+   bottom: 40px;
+   transform: translateX(-50%);
+   display: flex;
+}
+.thumb li
+{
+   list-style: none;
+   display: inline-block;
+   width: 30px;
+   height: 70px;
+   margin: 0 20px;
+   cursor: pointer;
+   transition: 0.5s;
+}
+.thumb li :hover
+{
+   transform: translateY(-15px);
+}
+.thumb li img
+{
+   max-width: 70px;
+}
+
+.circle
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: #000000;
+   clip-path: circle(700px at right 900px);
+   color: #363535;
+}
+
+
+
+@keyframes slideRight {
+   0% {
+       transform: translateX(-100px);
+       opacity: 0;
+   }
+
+   100% {
+       transform: translateX(0px);
+       opacity: 1;
+   }
+}
+@keyframes slideLeft {
+   0% {
+       transform: translateX(-100px);
+       opacity: 0;
+   }
+
+   100% {
+       transform: translateX(0px);
+       opacity: 1;
+   }
+}
+@keyframes slidetop {
+   0% {
+       transform: translateX(-100px);
+       opacity: 0;
+   }
+
+   100% {
+       transform: translateX(0px);
+       opacity: 1;
+   }
+}
+@keyframes slideBottm {
+   0% {
+       transform: translateX(-100px);
+       opacity: 0;
+   }
+
+   100% {
+       transform: translateX(0px);
+       opacity: 1;
+   }
+}
